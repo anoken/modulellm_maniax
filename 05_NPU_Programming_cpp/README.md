@@ -30,7 +30,7 @@ sudo cp -r ax-samples /opt/
 
 ## OpenCV-Mobileのインストール
 
-エッジデバイス向けに最適化された軽量版OpenCVライブラリをインストールします。
+エッジデバイス向けに最適化された軽量版OpenCVライブラリOpenCV-Mobileをインストールします。
 
 ```bash
 cd /opt/ax-samples
