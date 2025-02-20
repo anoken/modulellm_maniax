@@ -1,0 +1,45 @@
+{
+ "model_type": "ONNX",          // モデルフォーマット(ONNX/QuantAxModel/QuantONNX)
+ "npu_mode": "NPU1",            // NPUモード(AX620Eの場合はNPU1/NPU2)
+ "target_hardware": "AX620E",   // ターゲットハードウェア(AX650/AX620E/M76H)
+ "input": "yolo11n-cut.onnx",  // 入力モデルのファイルパス
+ "output_dir": "yolo11n",      // コンパイル結果の出力ディレクトリ
+ "output_name": "yolo11n-cut.axmodel",  // 出力モデルのファイル名
+ "quant": {
+   "input_configs": [
+     {
+       "tensor_name": "images", // モデルの入力テンソル名
+       "calibration_dataset": "./dataset/calib_image.tar.gz", // キャリブデータ
+       "calibration_size": 10,  // キャリブレーションに使用するデータ数
+       "calibration_mean": [0, 0, 0],  // 正規化の平均値
+       "calibration_std": [255.0, 255.0, 255.0]  // 正規化の標準偏差
+     }
+   ],
+   "calibration_method": "MinMax",  // 量子化キャリブレーション方法
+   "precision_analysis": true,      // 量子化精度分析の有効化
+ },
+ "input_processors": [
+   {
+     "tensor_name": "images",   // 処理対象の入力テンソル名
+     "tensor_format": "BGR",    // モデルの入力テンソル形式
+     "src_format": "BGR",       // 実行時の入力形式
+     "src_dtype": "U8",         // 実行時の入力データ型
+     "src_layout": "NHWC"       // 実行時の入力レイアウト
+   }
+ ],
+ "output_processors": [
+   {
+     "tensor_name": "/model.23/Concat_output_0",    // YOLOv8出力テンソル1
+     "dst_perm": [0, 2, 3, 1]                      // 出力テンソルの並べ替え順序
+   },    {
+     "tensor_name": "/model.23/Concat_1_output_0",  // YOLOv8出力テンソル2 
+     "dst_perm": [0, 2, 3, 1]                      // 出力テンソルの並べ替え順序
+   },    {
+     "tensor_name": "/model.23/Concat_2_output_0",  // YOLOv8出力テンソル3
+     "dst_perm": [0, 2, 3, 1]                      // 出力テンソルの並べ替え順序
+   }
+ ],
+ "compiler": {
+   "check": 2                   // コンパイラチェックレベル(0-3)
+ }
+}

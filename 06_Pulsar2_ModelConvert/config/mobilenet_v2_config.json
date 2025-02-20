@@ -1,0 +1,34 @@
+{
+ "model_type": "ONNX",          // 入力モデルフォーマット(ONNX/QuantAxModel/QuantONNX)
+ "npu_mode": "NPU1",            // NPUモード(AX620Eの場合はNPU1/NPU2)
+ "target_hardware": "AX620E",   // ターゲットハードウェア(AX650/AX620E/M76H)
+ "input": "mobilenet_v2.onnx",  // 入力モデルのファイルパス
+ "output_dir": "mobilenet_v2",  // コンパイル結果の出力ディレクトリ
+ "output_name": "mobilenet_v2.axmodel",  // 出力モデルのファイル名
+ "quant": {
+   "input_configs": [
+     {
+       "tensor_name": "input",  // モデルの入力テンソル名
+       "calibration_dataset": "./dataset/calib_image.tar.gz",  // キャリブデータ
+       "calibration_size": 10,  // キャリブレーションに使用するデータ数
+       "calibration_mean": [103.939, 116.779, 123.68],  // 正規化の平均値
+       "calibration_std": [58.0, 58.0, 58.0]  // 正規化の標準偏差
+     }
+   ],
+   "calibration_method": "MinMax",  // 量子化キャリブレーション方法
+   "precision_analysis": true       // 量子化精度分析の有効化
+ },
+ "input_processors": [
+   {
+     "tensor_name": "input",    // 処理対象の入力テンソル名
+     "tensor_format": "BGR",    // モデルの入力テンソル形式
+     "src_format": "BGR",       // 実行時の入力形式
+     "src_dtype": "U8",         // 実行時の入力データ型
+     "src_layout": "NHWC",      // 実行時の入力レイアウト
+     "csc_mode": "NoCSC"        // カラースペース変換モード(変換なし)
+   }
+ ],
+ "compiler": {
+   "check": 2                   // コンパイラチェックレベル(0-3)
+ }
+}

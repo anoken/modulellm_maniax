@@ -1,0 +1,31 @@
+{
+  "model_type": "ONNX",                    // モデルフォーマット
+  "npu_mode": "NPU1",                      // NPUモード
+  "target_hardware": "AX620E",             // ターゲットハードウェア
+  "input": "onnx_matmul.onnx",                  // 入力モデル
+  "output_dir": "output",                  // 出力ディレクトリ
+  "output_name": "onnx_matmul.axmodel",         // 出力ファイル名
+  "quant": {
+    "input_configs": [
+      {
+        "tensor_name": "matrix",           // 4x4行列入力
+        "calibration_dataset": "dataset/matrix_data.tar",
+        "calibration_format": "Numpy"
+      },
+      {
+        "tensor_name": "points",           // 4x1点群入力
+        "calibration_dataset": "dataset/points_data.tar",
+        "calibration_format": "Numpy"
+      }
+    ],
+    "layer_configs": [
+      {
+        "start_tensor_names": ["DEFAULT"],  // すべてのレイヤーに適用
+        "end_tensor_names": ["DEFAULT"],
+        "data_type": "U8"                 // 8ビット符号なし整数
+      }
+    ],
+    "calibration_method": "MinMax",        // キャリブレーション方式
+    "precision_analysis": true             // 精度分析を有効化
+  }
+}
