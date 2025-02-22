@@ -1,7 +1,10 @@
-# ライブラリのインストール
-
+# Module-LLMのC++開発環境
 Module-LLMのC++開発環境を構築します。
 
+ax620e_bsp_sdk: https://github.com/AXERA-TECH/ax620e_bsp_sdk
+ax-samples: https://github.com/AXERA-TECH/ax-samples
+opencv-mobile: https://github.com/nihui/opencv-mobile
+#  preparation
 ## クロスコンパイラのインストール
 
 Module-LLMのax630cはArmの64Bitプロセッサを搭載しているため、aarch64用のクロスコンパイラをインストールします。
@@ -15,7 +18,7 @@ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 AX620E BSP SDKをAXERAのGitHubリポジトリからダウンロードし、/opt/に配置します。
 
 ```bash
-git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk.git
+git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
 sudo cp -r ax620q_bsp_sdk /opt/
 ```
 
