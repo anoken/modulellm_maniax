@@ -1,6 +1,8 @@
 ## overview
 Module-LLM + pyaxengineで、画像認識を行うサンプルです。<br>
 
+pyaxengine:https://github.com/AXERA-TECH/pyaxengine
+
 
 ## preparation
 
@@ -22,7 +24,6 @@ root@m5stack-LLM # pip install axengine-0.1.0-py3-none-any.whl
 ├── ax_yolo11n_camera_stream.py
 ├── requirements.txt
 ```
-
 
  Copyright (c) 2025 aNoken
 
