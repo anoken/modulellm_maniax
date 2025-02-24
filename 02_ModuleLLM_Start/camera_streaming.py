@@ -7,40 +7,40 @@ import cv2
 from typing import Generator
 import time
 
-# FastAPIƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚ÌƒCƒ“ƒXƒ^ƒ“ƒX‚ğì¬
+# FastAPIã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã®ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ä½œæˆ
 app = FastAPI()
 
 def get_video_stream() -> Generator[bytes, None, None]:
-    # ƒJƒƒ‰‚©‚çƒrƒfƒIƒXƒgƒŠ[ƒ€‚ğ¶¬‚·‚éŠÖ”
-    # ƒJƒƒ‰ƒfƒoƒCƒX‚ğŠJ‚­i0‚Í’ÊíAƒfƒtƒHƒ‹ƒg‚ÌƒJƒƒ‰j
+    # ã‚«ãƒ¡ãƒ©ã‹ã‚‰ãƒ“ãƒ‡ã‚ªã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚’ç”Ÿæˆã™ã‚‹é–¢æ•°
+    # ã‚«ãƒ¡ãƒ©ãƒ‡ãƒã‚¤ã‚¹ã‚’é–‹ãï¼ˆ0ã¯é€šå¸¸ã€ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚«ãƒ¡ãƒ©ï¼‰
     camera = cv2.VideoCapture(0)
     try:
         while True:
-            # ƒJƒƒ‰‚©‚çƒtƒŒ[ƒ€‚ğ“Ç‚İæ‚é
+            # ã‚«ãƒ¡ãƒ©ã‹ã‚‰ãƒ•ãƒ¬ãƒ¼ãƒ ã‚’èª­ã¿å–ã‚‹
             success, frame = camera.read()
             if not success:
                 break
             
-            # ƒtƒŒ[ƒ€‚ğƒŠƒTƒCƒYi320x240j
+            # ãƒ•ãƒ¬ãƒ¼ãƒ ã‚’ãƒªã‚µã‚¤ã‚ºï¼ˆ320x240ï¼‰
             frame = cv2.resize(frame, (320, 240))
             
-            # ƒtƒŒ[ƒ€ƒŒ[ƒg‚ğ§Œäi0.05•b‚Ì‘Ò‹@j
+            # ãƒ•ãƒ¬ãƒ¼ãƒ ãƒ¬ãƒ¼ãƒˆã‚’åˆ¶å¾¡ï¼ˆ0.05ç§’ã®å¾…æ©Ÿï¼‰
             time.sleep(0.05)
             
-            # ƒtƒŒ[ƒ€‚ğJPEGŒ`®‚ÉƒGƒ“ƒR[ƒh
+            # ãƒ•ãƒ¬ãƒ¼ãƒ ã‚’JPEGå½¢å¼ã«ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰
             _, buffer = cv2.imencode('.jpg', frame)
             
-            # ƒ}ƒ‹ƒ`ƒp[ƒgŒ`®‚ÅƒtƒŒ[ƒ€‚ğ•Ô‚·
+            # ãƒãƒ«ãƒãƒ‘ãƒ¼ãƒˆå½¢å¼ã§ãƒ•ãƒ¬ãƒ¼ãƒ ã‚’è¿”ã™
             yield (b'--frame\r\n'
                   b'Content-Type: image/jpeg\r\n\r\n' + 
                   buffer.tobytes() + b'\r\n')
     finally:
-        # I—¹‚ÉƒJƒƒ‰‚ğ‰ğ•ú
+        # çµ‚äº†æ™‚ã«ã‚«ãƒ¡ãƒ©ã‚’è§£æ”¾
         camera.release()
 
 @app.get("/video")
 async def video_endpoint():
-    # ƒrƒfƒIƒXƒgƒŠ[ƒ€‚ğ’ñ‹Ÿ‚·‚éƒGƒ“ƒhƒ|ƒCƒ“ƒg
+    # ãƒ“ãƒ‡ã‚ªã‚¹ãƒˆãƒªãƒ¼ãƒ ã‚’æä¾›ã™ã‚‹ã‚¨ãƒ³ãƒ‰ãƒã‚¤ãƒ³ãƒˆ
     return StreamingResponse(
         get_video_stream(),
         media_type='multipart/x-mixed-replace; boundary=frame'
@@ -48,5 +48,5 @@ async def video_endpoint():
 
 if __name__ == "__main__":
     import uvicorn
-    # ƒT[ƒo[‚ğ‹N“®i‚·‚×‚Ä‚ÌIPƒAƒhƒŒƒX‚©‚çƒAƒNƒZƒX‰Â”\j
+    # ã‚µãƒ¼ãƒãƒ¼ã‚’èµ·å‹•ï¼ˆã™ã¹ã¦ã®IPã‚¢ãƒ‰ãƒ¬ã‚¹ã‹ã‚‰ã‚¢ã‚¯ã‚»ã‚¹å¯èƒ½ï¼‰
     uvicorn.run(app, host="0.0.0.0", port=8888)
