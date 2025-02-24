@@ -7,7 +7,6 @@ Module-LLMはAxera-techのAX630CというSoCを搭載しており、M5Stackに�
 本書には、Module-LLMの基本的な使い方から、Module-LLMのパワフルなNPUを使った画像処理の実践まで、Module-LLMを活用するための情報が豊富に含まれています。<br>
 
 ## 目次
-目次
 第1 章Module-LLM の紹介7<br>
 1.1 M5Stack Module-LLM とは. . . . . . . . . . . . . . . . . . . . 7<br>
 1.2 M5Stack LLM630 Compute Kit とは. . . . . . . . . . . . . . 8<br>
