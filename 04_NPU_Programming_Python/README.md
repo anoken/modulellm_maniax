@@ -22,6 +22,7 @@ root@m5stack-LLM # pip install axengine-0.1.0-py3-none-any.whl
 ├── ax_mobilenetv2_camera_stream.py
 ├── ax_yolo11n.py
 ├── ax_yolo11n_camera_stream.py
+├── camera_streaming.py
 ├── requirements.txt
 ```
 
