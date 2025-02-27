@@ -1,8 +1,11 @@
 # ModuleLLM_MAniaX
 
+
 「ModuleLLM_MAniaX 」のサポートページです。<br>
 
 <img src="https://github.com/user-attachments/assets/f87ec0f0-a848-4d3b-a6b6-f428445f089b" alt="image" width="300">
+
+Booth:https://anoken.booth.pm/items/6642202<br>
 
 ## 紹介
 Module-LLMはAXERAのAX630CというSoCを搭載しており、M5Stackにスタックすることができるコンパクトなサイズにも関わらず、LLM（Large Language Models、大規模言語モデル）を動かすことができる非常に面白いデバイスです。LLMだけではなく、画像処理のCNNやTransformerを使ったモデルや、音声合成・音声認識のモデルをパラフルなNPUで高速に動かすことができます。<br>
