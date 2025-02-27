@@ -3,7 +3,7 @@
 
 「ModuleLLM_MAniaX 」のサポートページです。<br>
 
-<img src="https://github.com/user-attachments/assets/f87ec0f0-a848-4d3b-a6b6-f428445f089b" alt="image" width="300">
+<img src="https://github.com/user-attachments/assets/2c61be25-8502-4ecd-af3a-2bb4241dbbde" alt="image" width="600">
 
 Booth:https://anoken.booth.pm/items/6642202<br>
 
