@@ -1,8 +1,5 @@
-/*
- * SPDX-FileCopyrightText: 2024 M5Stack Technology CO LTD
- *
- * SPDX-License-Identifier: MIT
- */
+// Copyright (c) 2025 aNoken
+
 #include <Arduino.h>
 #include <M5Unified.h>
 #include <M5ModuleLLM.h>
