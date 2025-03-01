@@ -1,18 +1,18 @@
 # 第5章:C++でNPU推論
 
-- ax_classification
- MobileNetV2の推論プログラム
-- ax_depth_anything
- DepthAnything の推論プログラム
-- camera_streaming
- USB カメラの画像をストリーミング配信
-- ax_depth_anything_video_stream
-  DepthAnything の推論をストリーミング配信
+- ax_classification:<br>
+ MobileNetV2の推論プログラム<br>
+- ax_depth_anything:<br>
+ DepthAnything の推論プログラム<br>
+- camera_streaming:<br>
+ USB カメラの画像をストリーミング配信<br>
+- ax_depth_anything_video_stream:<br>
+  DepthAnything の推論をストリーミング配信<br>
 
 
 #  preparation
 
-Module-LLMのC++開発環境を構築します。
+Module-LLMのC++開発環境を構築します。<br>
 
 ax620e_bsp_sdk: https://github.com/AXERA-TECH/ax620e_bsp_sdk<br>
 ax-samples: https://github.com/AXERA-TECH/ax-samples<br>
