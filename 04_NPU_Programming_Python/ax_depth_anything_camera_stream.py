@@ -40,7 +40,6 @@ def get_video_stream(model_path: str, width: int, height: int):
             if not success:
                 break
 
-            frame = cv2.resize(frame, (width, height))
             tensor = process_frame(frame, width, height)
             output = session.run(None, {input_name: tensor})
             viz = create_depth_map(output[0], frame)
