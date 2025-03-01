@@ -35,7 +35,11 @@ def preprocess(image_path, input_size):
    if image is None:
        raise FileNotFoundError(f"画像ファイルを読み取れませんでした: {image_path}")
    original_shape = image.shape[:2]
+
+   #Pulsar2の変換パラメータによっては、以下は不要
+   #M5Stackのllm-yolo_1.4-m5stack1_arm64.deb内のaxmodelを使う場合は必要
    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
    resized_image = cv2.resize(image, input_size)
    input_tensor = np.expand_dims(resized_image, axis=0).astype(np.uint8)
    return input_tensor, original_shape, image
