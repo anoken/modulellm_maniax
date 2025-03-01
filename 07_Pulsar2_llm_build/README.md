@@ -43,3 +43,33 @@ model.embed_tokens.weight.float32.bin    #一時ファイルのため削除可
 model.embed_tokens.weight.npy            #一時ファイルのため削除可
 ```
 
+## TinySwallow-1.5BモデルのModule-LLMへの配置
+
+```bash
+root@m5stack-LLM:~# tree /opt/m5stack/
+
+/opt/m5stack/
+├── data
+│   ├── TinySwallow-1.5B                     #Pulsar2で変換したaxmodel
+│   │   ├── model.embed_tokens.weight.bfloat16.bin
+│   │   ├── qwen2_p128_l0_together.axmodel    
+│   │   ├── qwen2_p128_l1_together.axmodel
+│   │   ├── qwen2_p128_l2_together.axmodel
+│   │   ├── qwen2_p128_l3_together.axmodel
+│   │   ├── qwen2_p128_l4_together.axmodel
+...
+│   │   ├── qwen2_p128_l24_together.axmodel
+│   │   ├── qwen2_p128_l25_together.axmodel
+│   │   ├── qwen2_p128_l26_together.axmodel
+│   │   ├── qwen2_p128_l27_together.axmodel
+│   │   ├── qwen2_post.axmodel
+│   │   └── tokenizer
+│   │       ├── tokenizer.json           #Hugging Faceからコピー
+│   │       └── tokenizer_config.json    #Hugging Faceからコピー
+│   └── models
+│       └── mode_TinySwallow-1.5B.json   #LLMの設定ファイル
+└── scripts
+    └── TinySwallow-1.5B_tokenizer.py	 #tokenizer,他のLLMモデルと共通
+```
+
+
