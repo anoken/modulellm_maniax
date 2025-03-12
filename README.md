@@ -13,72 +13,76 @@ Module-LLMはAXERAのAX630CというSoCを搭載しており、M5Stackにスタ�
 ・A5サイズ・156Page (148mm×210mmx9mm)<br>
 ・サポートページ： https://github.com/anoken/modulellm_maniax<br>
 
-
-## 目次
+## 目次<br>
 第1 章Module-LLM の紹介<br>
-   1.1 M5Stack Module-LLM とは. . . . . . . . . . . . . . . . . . . . 7<br>
-   1.2 M5Stack LLM630 Compute Kit とは. . . . . . . . . . . . . . 8<br>
-   1.3 M5Stack とは. . . . . . . . . . . . . . . . . . . . . . . . . . . 9<br>
-   1.4 AXERA 社とは. . . . . . . . . . . . . . . . . . . . . . . . . . . 10<br>
-   1.5 AXERA AX630C とは. . . . . . . . . . . . . . . . . . . . . . 12<br><br>
+   1.1 M5Stack Module-LLM とは<br>
+   1.2 M5Stack LLM630 Compute Kit とは<br>
+   1.3 M5Stack とは<br>
+   1.4 AXERA 社とは<br>
+   1.5 AXERA AX630C とは<br>
+
 第2 章Module-LLM をつかってみよう<br>
-   2.1 Module-LLM とデバッグボードを繋ぐ. . . . . . . . . . . . . . . 13<br>
-   2.1.1 Module-LLM とデバッグボードの接続方法. . . . . . . . 13<br>
-   2.2 ADB ツールを使ってログインする. . . . . . . . . . . . . . . . . 18<br>
-   2.3 Module-LLM でL チカ. . . . . . . . . . . . . . . . . . . . . . 20<br>
-   2.3.1 Module-LLM のLED の役割. . . . . . . . . . . . . . . 20<br>
-   2.3.2 L チカをしてみる. . . . . . . . . . . . . . . . . . . . . . 20<br>
-   2.3.3 Python からLED を制御する. . . . . . . . . . . . . . . 21<br>
-   2.4 Module-LLM の起動音の消し方. . . . . . . . . . . . . . . . . . 22<br>
-   2.5 Module-LLM へファイル転送. . . . . . . . . . . . . . . . . . . 23<br>
-   2.6 Samba で共有フォルダを作る. . . . . . . . . . . . . . . . . . . 25<br>
-   2.7 メモリが足りない場合の対処. . . . . . . . . . . . . . . . . . . . 28<br>
-   2.8 ファームウェアの更新手順. . . . . . . . . . . . . . . . . . . . . 36<br>
-   2.9 WSL2 のインストール. . . . . . . . . . . . . . . . . . . . . . . 40<br>
+   2.1 Module-LLM とデバッグボードを繋ぐ<br>
+   2.1.1 Module-LLM とデバッグボードの接続方法<br>
+   2.2 ADB ツールを使ってログインする<br>
+   2.3 Module-LLM でL チカ<br>
+   2.3.1 Module-LLM のLED の役割<br>
+   2.3.2 L チカをしてみる<br>
+   2.3.3 Python からLED を制御する<br>
+   2.4 Module-LLM の起動音の消し方<br>
+   2.5 Module-LLM へファイル転送<br>
+   2.6 Samba で共有フォルダを作る<br>
+   2.7 メモリが足りない場合の対処<br>
+   2.8 ファームウェアの更新手順<br>
+   2.9 WSL2 のインストール<br>
    
 第3 章StackFlow を使ってみよう<br>
-   3.1 StackFlow とは？ . . . . . . . . . . . . . . . . . . . . . . . . . 43<br>
-   3.2 StackFlow のdeb パッケージについて. . . . . . . . . . . . . . . 44<br>
-   3.3 StackFlow の起動と停止. . . . . . . . . . . . . . . . . . . . . . 44<br>
-   3.4 StackFlow のインストール. . . . . . . . . . . . . . . . . . . . . 47<br>
-   3.5 StackFlow をPython から使ってみよう. . . . . . . . . . . . . . 49<br>
-   3.6 StackFlow のllm-sys ユニットとは？ . . . . . . . . . . . . . . . 50<br>
-   3.7 StackFlow からリセットをかける. . . . . . . . . . . . . . . . . 54<br>
-   3.8 StackFlow からLinux コマンド実行. . . . . . . . . . . . . . . . 56<br>
-   3.9 StackFlow でLLM の推論をする. . . . . . . . . . . . . . . . . 59<br>
-   3.10 StackFlow でMeloTTS から発音を行う. . . . . . . . . . . . . . 63<br>
-   3.11 StackFlow でWhisper から音声認識. . . . . . . . . . . . . . . 67<br>
-   3.12 StackFlow をビルドするには. . . . . . . . . . . . . . . . . . . . 73<br><br>
+   3.1 StackFlow とは？<br>
+   3.2 StackFlow のdeb パッケージについて<br>
+   3.3 StackFlow の起動と停止<br>
+   3.4 StackFlow のインストール<br>
+   3.5 StackFlow をPython から使ってみよう<br>
+   3.6 StackFlow のllm-sys ユニットとは？<br>
+   3.7 StackFlow からリセットをかける<br>
+   3.8 StackFlow からLinux コマンド実行<br>
+   3.9 StackFlow でLLM の推論をする<br>
+   3.10 StackFlow でMeloTTS から発音を行う<br>
+   3.11 StackFlow でWhisper から音声認識<br>
+   3.12 StackFlow をビルドするには<br>
+
 第4 章Python でNPU 推論<br>
-   4.1 PyAXEngine とは？ . . . . . . . . . . . . . . . . . . . . . . . 74<br>
-   4.2 PyAXEngine のインストール. . . . . . . . . . . . . . . . . . . 74<br>
-   4.3 MobileNetV2 の推論. . . . . . . . . . . . . . . . . . . . . . . . 75<br>
-   4.4 YOLO11 の推論. . . . . . . . . . . . . . . . . . . . . . . . . . 79<br>
-   4.5 DepthAnything の推論. . . . . . . . . . . . . . . . . . . . . . . 85<br>
-   4.6 USB カメラからの動画取得. . . . . . . . . . . . . . . . . . . . . 88<br>
-   4.7 USB カメラからのDepthAnything 推論. . . . . . . . . . . . . . 91<br><br>
+   4.1 PyAXEngine とは？<br>
+   4.2 PyAXEngine のインストール<br>
+   4.3 MobileNetV2 の推論<br>
+   4.4 YOLO11 の推論<br>
+   4.5 DepthAnything の推論<br>
+   4.6 USB カメラからの動画取得<br>
+   4.7 USB カメラからのDepthAnything 推論<br>
+
 第5 章C++ でNPU 推論<br>
-   5.1 C++ 開発環境の準備. . . . . . . . . . . . . . . . . . . . . . . . 95<br>
-   5.2 ライブラリのインストール. . . . . . . . . . . . . . . . . . . . . 95<br>
-   5.3 DepthAnything の推論プログラムの作成. . . . . . . . . . . . . 98<br>
-   5.4 USB カメラの画像をストリーミング配信する. . . . . . . . . . . 104<br>
-   5.5 USB カメラからのDepthAnything 推論. . . . . . . . . . . . . . 107<br>
-   5.6 ax-samples のCV サンプルのビルド手順. . . . . . . . . . . . . 112<br>
-   5.7 OpenCV-Mobile のビルド手順. . . . . . . . . . . . . . . . . . . 115<br><br>
+   5.1 C++ 開発環境の準備<br>
+   5.2 ライブラリのインストール<br>
+   5.3 DepthAnything の推論プログラムの作成<br>
+   5.4 USB カメラの画像をストリーミング配信する<br>
+   5.5 USB カメラからのDepthAnything 推論<br>
+   5.6 ax-samples のCV サンプルのビルド手順<br>
+   5.7 OpenCV-Mobile のビルド手順<br>
+
 第6 章Pulsar2 でモデル変換<br>
-   6.1 量子化とは？ . . . . . . . . . . . . . . . . . . . . . . . . . . . . 118<br>
-   6.2 Pulsar2 ToolChain の概要. . . . . . . . . . . . . . . . . . . . . 120<br>
-   6.3 Pulsar2 のインストール. . . . . . . . . . . . . . . . . . . . . . 122<br>
-   6.4 ライブラリのインストール. . . . . . . . . . . . . . . . . . . . . 125<br>
-   6.5 サンプルデータのダウンロード. . . . . . . . . . . . . . . . . . . 125<br>
-   6.6 MobileNetV2 モデルの変換. . . . . . . . . . . . . . . . . . . . 126<br>
-   6.7 YOLO11 モデルの変換. . . . . . . . . . . . . . . . . . . . . . . 128<br>
-   6.8 行列計算モデルの変換. . . . . . . . . . . . . . . . . . . . . . . . 133<br>
-   6.9 Pulsar2 が対応しているONNX オペレータ. . . . . . . . . . . . 141<br><br>
+   6.1 量子化とは？<br>
+   6.2 Pulsar2 ToolChain の概要<br>
+   6.3 Pulsar2 のインストール<br>
+   6.4 ライブラリのインストール<br>
+   6.5 サンプルデータのダウンロード<br>
+   6.6 MobileNetV2 モデルの変換<br>
+   6.7 YOLO11 モデルの変換<br>
+   6.8 行列計算モデルの変換<br>
+   6.9 Pulsar2 が対応しているONNX オペレータ<br>
+
 第7 章Pulsar2 でLLM モデルを変換<br>
-   7.1 TinySwallow-1.5B とは？ . . . . . . . . . . . . . . . . . . . . . 144<br>
-   7.2 huggingface_hub のインストール. . . . . . . . . . . . . . . . . 144<br>
-   7.3 TinySwallow-1.5B モデルのダウンロード. . . . . . . . . . . . . 146<br>
+   7.1 TinySwallow-1.5B とは？<br>
+   7.2 huggingface_hub のインストール<br>
+   7.3 TinySwallow-1.5B モデルのダウンロード<br>
 <br>
 Copyright (c) 2025 aNoken<br>
 
