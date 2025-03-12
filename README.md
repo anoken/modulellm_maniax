@@ -11,7 +11,7 @@ Module-LLMはAXERAのAX630CというSoCを搭載しており、M5Stackにスタ�
 
 
 ・A5サイズ・156Page (148mm×210mmx9mm)<br>
-・サポートページ： https://github.com/anoken/modulellm_maniax<br>
+・サポートページ： https://github.com/anoken/modulellm_maniax<br><br>
 ・電子書籍：BOOTHで取り扱っています。https://anoken.booth.pm/items/6642202<br>
 ・書籍：準備中です。<br>
 
