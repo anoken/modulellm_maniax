@@ -2,7 +2,7 @@
 
 「ModuleLLM_MAniaX 」のサポートページです。<br>
 
-<img src="https://github.com/user-attachments/assets/dc3b09f6-b0a7-4d79-a24c-6b867836dcd9" alt="image" width="640">
+<img src="https://github.com/user-attachments/assets/448420ea-1c44-4567-bcb3-9b4e411e3a6a" alt="image" width="640">
 
 
 ## 紹介
