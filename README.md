@@ -10,10 +10,10 @@
 著者 aNo研<br>
 A5サイズ・156ページ (148mm×210mmx9mm)<br>
 
-M5StackのModule-LLMは、AXERA社のAX630Cを搭載したコンパクトなモジュールです。このモジュールは大規模言語モデル（LLM）を実行できるだけでなく、CNN（畳み込みニューラルネットワーク）やTransformerなどのAIモデルも高性能NPU（ニューラルプロセッシングユニット）で処理することができます。<br>
-本書ではModule-LLMの基本的な使い方から画像処理やモデル変換といった応用テクニックまで幅広く解説しています。<br>
+M5StackのModule-LLM(LLMモジュール)は、AXERA社のAX630Cを搭載したコンパクトなモジュールです。このモジュールは大規模言語モデル（LLM）を実行できるだけでなく、CNN（畳み込みニューラルネットワーク）やTransformerなどのAIモデルを高性能NPU（ニューラルプロセッシングユニット）で処理することができます。<br>
+本書ではModule-LLMの基本的な使い方から、画像処理やモデル変換といった応用テクニックまで、幅広く解説しています。<br>
 
-EdgeAIとEdgeLLMの可能性を、本書とModule-LLMで体験してみませんか？<br>
+EdgeAIとEdgeLLMの可能性を、当書籍とModule-LLMを通じて体験してみませんか？<br>
 
 ・サポートページ： https://github.com/anoken/modulellm_maniax<br><br>
 ・電子書籍：BOOTHで取り扱っています。https://anoken.booth.pm/items/6642202<br>
