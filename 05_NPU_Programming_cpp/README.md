@@ -32,7 +32,7 @@ AX620E BSP SDKをAXERAのGitHubリポジトリからダウンロードし、/opt
 
 ```bash
 $git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
-$sudo cp -r ax620q_bsp_sdk /opt/
+$sudo cp -r ax620e_bsp_sdk /opt/
 ```
 
 ## ax-samplesのダウンロード
