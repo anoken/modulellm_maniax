@@ -14,13 +14,16 @@ P.112<br>
 
 P.113<br>
 誤：<br>
+```
  UbuntuPC$ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git<br>
  UbuntuPC$ export ax_bsp=$PWD/ax620e_bsp_sdk/msp/out/arm64_glibc/<br>
  UbuntuPC$ echo $ax_bsp /opt/ax620e_bsp_sdk/msp/out/arm64_glibc/<br>
+```
 →正：<br>
+```
  UbuntuPC$ git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk.git<br>
  UbuntuPC$ export ax_bsp=$PWD/ax620e_bsp_sdk/msp/out/arm64_glibc/<br>
  UbuntuPC$ echo $ax_bsp /opt/ax620e_bsp_sdk/msp/out/arm64_glibc/<br>
-
+```
 
 
