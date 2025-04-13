@@ -19,6 +19,9 @@ EdgeAIとEdgeLLMの可能性を、当書籍とModule-LLMを通じて体験して
 ・電子書籍：BOOTHで取り扱っています。https://anoken.booth.pm/items/6642202<br>
 ・書籍：スイッチサイエンスで取り扱っています。https://www.switch-science.com/products/10307<br>
 
+## 訂正とお詫びのお知らせ
+[訂正とお詫びのお知らせ](https://github.com/anoken/modulellm_maniax/blob/main/Notice_Correction.md)
+
 ## 目次<br>
 第1 章Module-LLM の紹介<br>
    1.1 M5Stack Module-LLM とは<br>
