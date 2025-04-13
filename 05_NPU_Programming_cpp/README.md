@@ -23,7 +23,7 @@ opencv-mobile: https://github.com/nihui/opencv-mobile<br>
 Module-LLMのax630cはArmの64Bitプロセッサを搭載しているため、aarch64用のクロスコンパイラをインストールします。
 こちらの作業は、Ubuntu-PCで実行してください。
 ```bash
-$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+UbuntuPC$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 ```
 
 ## AX620Q BSP SDKのダウンロード
@@ -40,8 +40,8 @@ $ sudo cp -r ax620e_bsp_sdk /opt/
 AXERAのC++言語用のサンプルプログラム「ax-samples」をダウンロードし、/opt/に配置します。
 
 ```bash
-$ git clone https://github.com/AXERA-TECH/ax-samples
-$ sudo cp -r ax-samples /opt/
+UbuntuPC$ git clone https://github.com/AXERA-TECH/ax-samples
+UbuntuPC$ sudo cp -r ax-samples /opt/
 ```
 
 ## OpenCV-Mobileのインストール
@@ -49,19 +49,19 @@ $ sudo cp -r ax-samples /opt/
 エッジデバイス向けに最適化された軽量版OpenCVライブラリOpenCV-Mobileをインストールします。
 
 ```bash
-$ cd /opt/ax-samples
-$ mkdir -p ./3rdparty
-$ wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
-$ unzip opencv-aarch64-linux.zip -d ./3rdparty
+UbuntuPC$ cd /opt/ax-samples
+UbuntuPC$ mkdir -p ./3rdparty
+UbuntuPC$ wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
+UbuntuPC$ unzip opencv-aarch64-linux.zip -d ./3rdparty
 ```
 
 ## ax_classificationのビルド
 
 ```bash
-$ git clone https://github.com/anoken/modulellm_maniax/
-$ cd 05_NPU_Programming_cpp/ax_classification
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
+UbuntuPC$ git clone https://github.com/anoken/modulellm_maniax/
+UbuntuPC$ cd 05_NPU_Programming_cpp/ax_classification
+UbuntuPC$ mkdir build
+UbuntuPC$ cd build
+UbuntuPC$ cmake ..
+UbuntuPC$ make
 ```
