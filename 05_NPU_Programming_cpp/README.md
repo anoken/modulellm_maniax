@@ -21,7 +21,8 @@ opencv-mobile: https://github.com/nihui/opencv-mobile<br>
 ## クロスコンパイラのインストール
 
 Module-LLMのax630cはArmの64Bitプロセッサを搭載しているため、aarch64用のクロスコンパイラをインストールします。
-こちらの作業は、Ubuntu-PCで実行してください。
+こちらの作業は、Ubuntu-PCで実行する作業となります。
+
 ```bash
 UbuntuPC$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 ```
@@ -31,8 +32,8 @@ UbuntuPC$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 AX620E BSP SDKをAXERAのGitHubリポジトリからダウンロードし、/opt/に配置します。
 
 ```bash
-$ git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
-$ sudo cp -r ax620e_bsp_sdk /opt/
+UbuntuPC$ git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
+UbuntuPC$ sudo cp -r ax620e_bsp_sdk /opt/
 ```
 
 ## ax-samplesのダウンロード
