@@ -20,7 +20,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall")
 # 依存ライブラリのパス設定
 set(OpenCV_DIR 
     /opt/ax-samples/3rdparty/opencv-aarch64-linux/lib/cmake/opencv4/)
-set(BSP_MSP_DIR /opt/ax620q_bsp_sdk/msp/out)
+set(BSP_MSP_DIR /opt/ax620e_bsp_sdk/msp/out)
 set(AX_SAMPLES_DIR /opt/ax-samples/examples)
 
 # ターゲット名の設定
