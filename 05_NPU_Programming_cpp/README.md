@@ -21,9 +21,9 @@ opencv-mobile: https://github.com/nihui/opencv-mobile<br>
 ## クロスコンパイラのインストール
 
 Module-LLMのax630cはArmの64Bitプロセッサを搭載しているため、aarch64用のクロスコンパイラをインストールします。
-
+こちらの作業は、Ubuntu-PCで実行してください。
 ```bash
-$sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 ```
 
 ## AX620Q BSP SDKのダウンロード
@@ -31,8 +31,8 @@ $sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 AX620E BSP SDKをAXERAのGitHubリポジトリからダウンロードし、/opt/に配置します。
 
 ```bash
-$git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
-$sudo cp -r ax620e_bsp_sdk /opt/
+$ git clone https://github.com/AXERA-TECH/ax620e_bsp_sdk
+$ sudo cp -r ax620e_bsp_sdk /opt/
 ```
 
 ## ax-samplesのダウンロード
@@ -40,8 +40,8 @@ $sudo cp -r ax620e_bsp_sdk /opt/
 AXERAのC++言語用のサンプルプログラム「ax-samples」をダウンロードし、/opt/に配置します。
 
 ```bash
-$git clone https://github.com/AXERA-TECH/ax-samples
-$sudo cp -r ax-samples /opt/
+$ git clone https://github.com/AXERA-TECH/ax-samples
+$ sudo cp -r ax-samples /opt/
 ```
 
 ## OpenCV-Mobileのインストール
@@ -49,10 +49,10 @@ $sudo cp -r ax-samples /opt/
 エッジデバイス向けに最適化された軽量版OpenCVライブラリOpenCV-Mobileをインストールします。
 
 ```bash
-$cd /opt/ax-samples
-$mkdir -p ./3rdparty
-$wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
-$unzip opencv-aarch64-linux.zip -d ./3rdparty
+$ cd /opt/ax-samples
+$ mkdir -p ./3rdparty
+$ wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
+$ unzip opencv-aarch64-linux.zip -d ./3rdparty
 ```
 
 ## ax_classificationのビルド
