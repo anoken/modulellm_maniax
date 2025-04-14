@@ -51,9 +51,9 @@ UbuntuPC$ sudo cp -r ax-samples /opt/
 
 ```bash
 UbuntuPC$ cd /opt/ax-samples
-UbuntuPC$ mkdir -p ./3rdparty
-UbuntuPC$ wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
-UbuntuPC$ unzip opencv-aarch64-linux.zip -d ./3rdparty
+UbuntuPC$ sudo mkdir -p ./3rdparty
+UbuntuPC$ sudo wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
+UbuntuPC$ sudo unzip opencv-aarch64-linux.zip -d ./3rdparty
 ```
 
 ## ax_classificationのビルド
