@@ -1,16 +1,16 @@
 ## Copyright (c) 2025 aNoken
 
 # 最小CMakeバージョンの指定
-cmake_minimum_required(VERSION 3.5)
-
-# プロジェクト名の設定
-project(ax_depth_anything_camera_stream)
+cmake_minimum_required(VERSION 3.13)
 
 # クロスコンパイル設定
 set(CMAKE_SYSTEM_NAME Linux)
 set(CMAKE_SYSTEM_PROCESSOR aarch64)
 set(CMAKE_C_COMPILER aarch64-linux-gnu-gcc)
 set(CMAKE_CXX_COMPILER aarch64-linux-gnu-g++)
+
+# プロジェクト名の設定
+project(ax_depth_anything_camera_stream)
 
 # ビルド設定
 set(CMAKE_BUILD_TYPE Release)
