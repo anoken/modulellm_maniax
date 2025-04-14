@@ -2,7 +2,7 @@
 
 
 # 最小CMakeバージョンの指定
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.13)
 
 # クロスコンパイル設定
 set(CMAKE_SYSTEM_NAME Linux)
