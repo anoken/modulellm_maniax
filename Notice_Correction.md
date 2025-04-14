@@ -10,7 +10,7 @@ ModuleLLM_MAniaX に下記のように誤りがありました。<br>
 
 誤：
 Ubuntu 24.04.1にて、cmakeのプロジェクト設定が、クロスコンパイル設定の前にあると,
-"No CMAKE_CXX_COMPILER could be found."が発生する不具合出るため、修正。
+"No CMAKE_CXX_COMPILER could be found."が発生する不具合出ることが判明したため、以下の通り修正。
 
 ```
 リスト5.2: CMakeLists.txt
@@ -40,7 +40,7 @@ project(ax_depth_anything_image)
 
 誤：
 Ubuntu 24.04.1にて、cmakeのプロジェクト設定が、クロスコンパイル設定の前にあると,
-"No CMAKE_CXX_COMPILER could be found."が発生する不具合出るため、修正。
+"No CMAKE_CXX_COMPILER could be found."が発生する不具合出ることが判明したため、以下の通り修正。
 
 ```
 リスト5.4: CMakeLists.txt
@@ -70,7 +70,7 @@ project(camera_streaming)
 
 誤：
 Ubuntu 24.04.1にて、cmakeのプロジェクト設定が、クロスコンパイル設定の前にあると,
-"No CMAKE_CXX_COMPILER could be found."が発生する不具合あるため、修正。
+"No CMAKE_CXX_COMPILER could be found."が発生する不具合出ることが判明したため、以下の通り修正。
 
 ```
 リスト5.6: CMakeLists.txt
@@ -97,7 +97,7 @@ set(CMAKE_CXX_COMPILER aarch64-linux-gnu-g++)
 project(ax_depth_anything_camera_stream)
 ```
 
-#### P.96<br>
+#### P.96 AX620Q-> AX620E の誤記修正<br> 
 誤：5.2.2 AX620Q BSP SDK のダウンロード<br>
 →正：5.2.2 AX620E BSP SDK のダウンロード<br>
 
@@ -105,7 +105,7 @@ project(ax_depth_anything_camera_stream)
 誤：set(BSP_MSP_DIR /opt/ax620q_bsp_sdk/msp/out)<br>
 →正：set(BSP_MSP_DIR /opt/ax620e_bsp_sdk/msp/out)<br>
 
-#### P.113<br>
+#### P.113 AX620Q-> AX620E の誤記修正<br> 
 誤：<br>
 ```
  UbuntuPC$ git clone https://github.com/AXERA-TECH/ax620q_bsp_sdk.git<br>
