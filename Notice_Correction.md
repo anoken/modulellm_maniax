@@ -9,7 +9,7 @@ ModuleLLM_MAniaX に下記のように誤りがありました。<br>
 #### P.103<br>
 
 誤：
-Ubuntu 24.04.1にて、cmakeのプロジェクト設定が、クロスコンパイル設定の前にあると,
+Ubuntu 24.04.1にて、cmakeのプロジェクト設定"project()"が、クロスコンパイル設定(CMAKE_C_COMPILER/CMAKE_CXX_COMPILER)の前にあると,
 "No CMAKE_CXX_COMPILER could be found."が発生する不具合出ることが判明したため、以下の通り修正。
 
 ```
