@@ -102,7 +102,7 @@ project(ax_depth_anything_camera_stream)
 誤：5.2.2 AX620Q BSP SDK のダウンロード<br>
 →正：5.2.2 AX620E BSP SDK のダウンロード<br>
 
-- P.112<br>
+#### P.112 AX620Q-> AX620E の誤記修正<br>
 誤：set(BSP_MSP_DIR /opt/ax620q_bsp_sdk/msp/out)<br>
 →正：set(BSP_MSP_DIR /opt/ax620e_bsp_sdk/msp/out)<br>
 
