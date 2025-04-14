@@ -62,7 +62,7 @@ UbuntuPC$ sudo unzip opencv-aarch64-linux.zip -d /opt/ax-samples/3rdparty
 
 ```bash
 UbuntuPC$ git clone https://github.com/anoken/modulellm_maniax/
-UbuntuPC$ cd 05_NPU_Programming_cpp/ax_classification
+UbuntuPC$ cd ./modulellm_maniax/05_NPU_Programming_cpp/ax_classification
 UbuntuPC$ mkdir build
 UbuntuPC$ cd build
 UbuntuPC$ cmake ..
