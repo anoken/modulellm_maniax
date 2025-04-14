@@ -11,7 +11,7 @@ ModuleLLM_MAniaX に下記のように誤りがありました。<br>
 誤：
 Ubuntu 24.04.1にて、cmakeのプロジェクト設定"project()"が、クロスコンパイル設定(CMAKE_C_COMPILER/CMAKE_CXX_COMPILER)の前にあると,
 "No CMAKE_CXX_COMPILER could be found."が発生する不具合出ることが判明したため、以下の通り修正。<br>
-補足：project() コマンドが呼び出されると、CMakeはシステムにあるコンパイラを自動的に検索し設定しようとします。クロスコンパイル環境を使用する場合、project() 呼び出し前にクロスコンパイル関連の変数（CMAKE_SYSTEM_NAME, CMAKE_C_COMPILER, CMAKE_CXX_COMPILERなど）を設定しておく必要があります<br>
+補足：project() コマンドが呼び出されると、CMakeはシステムにあるコンパイラを自動的に検索し設定しようとします。クロスコンパイル環境を使用する場合、project() 呼び出し前にクロスコンパイル関連の変数（CMAKE_SYSTEM_NAME,CMAKE_C_COMPILER, CMAKE_CXX_COMPILERなど）を設定しておく必要があります<br>
 
 ```
 リスト5.2: CMakeLists.txt
