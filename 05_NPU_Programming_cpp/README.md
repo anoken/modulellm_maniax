@@ -50,10 +50,9 @@ UbuntuPC$ sudo cp -r ax-samples /opt/
 エッジデバイス向けに最適化された軽量版OpenCVライブラリOpenCV-Mobileをインストールします。
 
 ```bash
-UbuntuPC$ cd /opt/ax-samples
-UbuntuPC$ sudo mkdir -p ./3rdparty
-UbuntuPC$ sudo wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
-UbuntuPC$ sudo unzip opencv-aarch64-linux.zip -d ./3rdparty
+UbuntuPC$ wget https://github.com/anoken/modulellm_maniax/releases/download/opencv_mobile/opencv-aarch64-linux.zip
+UbuntuPC$ sudo mkdir -p /opt/ax-samples/3rdparty
+UbuntuPC$ sudo unzip opencv-aarch64-linux.zip -d /opt/ax-samples/3rdparty
 ```
 
 ## ax_classificationのビルド
