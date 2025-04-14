@@ -24,7 +24,10 @@ Module-LLMのax630cはArmの64Bitプロセッサを搭載しているため、aa
 こちらの作業は、Ubuntu-PCで実行する作業となります。
 
 ```bash
+UbuntuPC$ sudo apt update
 UbuntuPC$ sudo apt install gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+UbuntuPC$ sudo apt install unzip
+
 ```
 
 ## AX620Q BSP SDKのダウンロード
