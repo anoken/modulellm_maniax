@@ -30,7 +30,7 @@ UbuntuPC$ sudo apt install unzip
 
 ```
 
-## AX620Q BSP SDKのダウンロード
+## AX620E BSP SDKのダウンロード
 
 AX620E BSP SDKをAXERAのGitHubリポジトリからダウンロードし、/opt/に配置します。
 
