@@ -64,7 +64,7 @@ def main(host, port):
             "action": "setup",
             "object": "melotts.setup",
             "data": {
-                "model": "melotts_zh-cn",
+                "model": "melotts-zh-cn",
                 "response_format": "sys.pcm",
                 "input": ["tts.utf-8.stream"],
                 "enoutput": False,
