@@ -35,7 +35,7 @@ def main(host, port):
 
 if __name__ == '__main__':
    parser = argparse.ArgumentParser()
-    parser.add_argument('--host', default='localhost')
+   parser.add_argument('--host', default='localhost')
    parser.add_argument('--port', type=int, default=10001)
    args = parser.parse_args()
    
